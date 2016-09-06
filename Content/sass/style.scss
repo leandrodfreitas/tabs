@@ -1,0 +1,54 @@
+/* variables */
+
+$color1: #CCC;
+
+$color2: #F8F7F7;
+
+$color3: #666;
+
+/* variables */
+
+.nav-tabs {         
+   display: inline-block;
+   margin: 0 0 -5px 0;
+   padding: 0;
+   
+   li {
+      border-left: 1px solid $color1;
+      border-right: 1px solid $color1;
+      border-top: 1px solid $color1;
+      float: left;         
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      
+      &.active {
+         background-color: $color2;
+         border-bottom: 1px solid $color2;
+         border-left: 1px solid $color3;
+         border-top: 1px solid $color3;
+         border-right: 1px solid $color3;   
+      }
+      
+      a {
+         color: $color3;
+         display: block;
+         padding: 10px 30px;
+         text-decoration: none;   
+      }
+      
+   }
+   
+}
+
+.tab-panel {
+   border: 1px solid $color3;
+   display: none;
+   padding: 20px;
+   
+   &.active {
+      background-color: $color2;
+      display: block;   
+   }
+   
+}
